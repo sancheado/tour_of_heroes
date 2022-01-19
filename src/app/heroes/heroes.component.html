@@ -7,4 +7,18 @@
   </li>
 </ul>
 
+<div class="container">
+  <div class="row">
+    <div class="col-12" *ngFor="let hero of heroes">
+        <div class="row">
+          <div class="col-2">
+            {{hero.id}}
+          </div>
+          <div class="col-10">
+            {{hero.name}}
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
 <app-hero-detail [hero]="selectedHero"></app-hero-detail>
